@@ -1,0 +1,7 @@
+{
+  "package": "threadpoolctl",
+  "version": "3.6.0",
+  "origin": "PyPI wheel",
+  "wheel_sha256": "43a0b8fd5a2928500110039e43a5eed8480b918967083ea48dc3ab9f13c4a7fb",
+  "reason": "First smoke failed before circuit execution because dependency absent; bundled without changing shared environment"
+}

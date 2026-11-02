@@ -1,0 +1,33 @@
+Post-execution scope correction (no changes to submitted source or raw results)
+
+The nominal16-qubit50-gate circuit has10groups. Its gates act only on wires0..10.
+Inspection of the installed PennyLane0.45.0-dev82 qubit/simulate.py get_final_state
+shows create_initial_state(sorted(circuit.op_wires), prep, like=...). Declaring16
+device wires does not force allocation of spectator wires for this expectation.
+Therefore the50-gate case is an11-active-wire case, not a16-qubit depth control.
+Its recorded statevector_bytes is a nominal calculation, not a measured allocation.
+All12such raw runs are preserved and flagged in the analysis; no fixed16-qubit
+depth claim uses them. The100and200-gate cases both use all16wires. All96runs in
+the main100-gate6..20-qubit sweep use every declared wire. No rerun was launched.
+
+Memory interpretation
+Measurements are Linux process RSS peaks after resetting VmHWM, not pure live
+statevector allocation counts. Incremental RSS includes circuit/derivative metadata,
+gate buffers and allocator effects. Small zero increments mean no additional resident
+pages were resolved above the initialized baseline, not zero quantum memory. Fits
+have implementation-dependent constants; negative fitted intercepts are descriptive
+artifacts of the limited range and must not be extrapolated as physical memory.
+
+The parameter-shift implementation prunes structurally zero derivatives. Execution
+counts vary by qubit count and gate count. It also builds classical tapes; increased
+memory with parameter count at fixed state size is not evidence that all shifted
+statevectors are held concurrently. All shifted circuits execute sequentially.
+
+The native numerical kernels differ between differentiation paths even with the same
+default.qubit device and Torch interface. Results characterize these installed paths,
+not a hardware-independent intrinsic constant for each gradient algorithm.
+
+Earlier smoke failure
+The global-productZ observable led the adjoint path to attempt a dense65536x65536
+complex128 matrix at16qubits (64GiB). This was an observable-representation issue,
+not an intrinsic adjoint statevector requirement. The final protocol uses localZ0.

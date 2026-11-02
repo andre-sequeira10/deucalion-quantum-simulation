@@ -1,0 +1,161 @@
+{
+  "status": "validated",
+  "initialization": "independent Uniform(-pi,pi) RY angles",
+  "seed": 20261027,
+  "estimator": "per-action sample variance across initializations, ddof=1",
+  "action_mapping": "parity of even-indexed wires followed by parity of odd-indexed wires; 0=even, 1=odd",
+  "results": [
+    {
+      "qubits": 30,
+      "samples": 2000,
+      "actions": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "mean_probabilities": [
+        0.24996748721133671,
+        0.24993498732502073,
+        0.2500654352665716,
+        0.25003209019707096
+      ],
+      "unbiased_policy_variance": [
+        4.035813156154792e-06,
+        4.2168929276758515e-06,
+        4.249461138315373e-06,
+        4.014162688252609e-06
+      ],
+      "max_probability_error": 2.7755575615628914e-15,
+      "mpi_ranks": 2,
+      "nodes": 2,
+      "threads_per_rank": 48,
+      "statevector_gib": 16.0,
+      "statevector_gib_per_rank": 8,
+      "max_rank_rss_gib": 16.226806640625,
+      "job_id": "2152291",
+      "elapsed": "02:32:20",
+      "total_sample_seconds": 9085.484433772042,
+      "versions": {
+        "pennylane": "0.45.0-dev82",
+        "lightning": "0.45.0.dev33",
+        "numpy": "2.4.4"
+      },
+      "source_sha256": "4e54723ec71071ef5b72f558162ec08a6dee3a110f4228eca4f51ceee6aeab69"
+    },
+    {
+      "qubits": 31,
+      "samples": 2000,
+      "actions": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "mean_probabilities": [
+        0.2500550204662594,
+        0.24999842364910382,
+        0.25000173835418177,
+        0.24994481753045505
+      ],
+      "unbiased_policy_variance": [
+        2.1458913172564183e-06,
+        2.231127609452273e-06,
+        2.230142284183971e-06,
+        2.1472243637852787e-06
+      ],
+      "max_probability_error": 4.9682480351975755e-15,
+      "mpi_ranks": 4,
+      "nodes": 4,
+      "threads_per_rank": 48,
+      "statevector_gib": 32.0,
+      "statevector_gib_per_rank": 8,
+      "max_rank_rss_gib": 16.2269287109375,
+      "job_id": "2152292",
+      "elapsed": "02:59:51",
+      "total_sample_seconds": 10736.121732831001,
+      "versions": {
+        "pennylane": "0.45.0-dev82",
+        "lightning": "0.45.0.dev33",
+        "numpy": "2.4.4"
+      },
+      "source_sha256": "4e54723ec71071ef5b72f558162ec08a6dee3a110f4228eca4f51ceee6aeab69"
+    },
+    {
+      "qubits": 32,
+      "samples": 2000,
+      "actions": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "mean_probabilities": [
+        0.2499974474122246,
+        0.25002212125354306,
+        0.24997785359981636,
+        0.250002577734416
+      ],
+      "unbiased_policy_variance": [
+        2.0184020555740228e-06,
+        2.0020772313194648e-06,
+        2.005036985773769e-06,
+        2.014838517783691e-06
+      ],
+      "max_probability_error": 2.8033131371785203e-15,
+      "mpi_ranks": 8,
+      "nodes": 8,
+      "threads_per_rank": 48,
+      "statevector_gib": 64.0,
+      "statevector_gib_per_rank": 8,
+      "max_rank_rss_gib": 16.29840087890625,
+      "job_id": "2152293",
+      "elapsed": "03:26:20",
+      "total_sample_seconds": 12324.96141229989,
+      "versions": {
+        "pennylane": "0.45.0-dev82",
+        "lightning": "0.45.0.dev33",
+        "numpy": "2.4.4"
+      },
+      "source_sha256": "4e54723ec71071ef5b72f558162ec08a6dee3a110f4228eca4f51ceee6aeab69"
+    },
+    {
+      "qubits": 34,
+      "samples": 2000,
+      "actions": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "mean_probabilities": [
+        0.2499921669200238,
+        0.250002770589704,
+        0.24999720254378183,
+        0.2500078599464904
+      ],
+      "unbiased_policy_variance": [
+        6.799741758818753e-07,
+        6.667676126494915e-07,
+        6.667590352019142e-07,
+        6.803247382978668e-07
+      ],
+      "max_probability_error": 1.6653345369377348e-15,
+      "mpi_ranks": 32,
+      "nodes": 32,
+      "threads_per_rank": 48,
+      "statevector_gib": 256.0,
+      "statevector_gib_per_rank": 8,
+      "max_rank_rss_gib": 16.3203125,
+      "job_id": "2152294",
+      "elapsed": "04:22:20",
+      "total_sample_seconds": 15674.377336472273,
+      "versions": {
+        "pennylane": "0.45.0-dev82",
+        "lightning": "0.45.0.dev33",
+        "numpy": "2.4.4"
+      },
+      "source_sha256": "4e54723ec71071ef5b72f558162ec08a6dee3a110f4228eca4f51ceee6aeab69"
+    }
+  ]
+}

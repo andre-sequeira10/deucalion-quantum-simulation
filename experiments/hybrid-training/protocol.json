@@ -1,0 +1,41 @@
+{
+  "version": 3,
+  "status": "candidate_not_learning_validated",
+  "declared_utc": "2026-10-29T06:16:20.930705+00:00",
+  "seeds": [
+    7,
+    17,
+    27
+  ],
+  "threads": 1,
+  "transitions": 80000,
+  "cap": 500,
+  "batch_episodes": 5,
+  "freeze": false,
+  "model_optimizer": "Same byte-identical v2 program, model, Adam AMSGrad and rate schedule; only training episode cap changes from 200 to 500.",
+  "learning_rate_schedule": {
+    "initial_quantum_embedding": 0.1,
+    "initial_readout": 0.01,
+    "start_transition": 30000,
+    "end_transition": 80000,
+    "final_factor": 0.1,
+    "formula": "factor=0.1**clip((batch_start_steps-30000)/50000,0,1); apply to both initial rates at each batch start"
+  },
+  "heldout_episodes_per_cap": 100,
+  "criteria": {
+    "200": 195,
+    "500": 475
+  },
+  "gate": "Report every seed and stability; require all three to meet both criteria for this candidate to clear the conservative production learning gate.",
+  "rationale": "v2 all three pass cap200 but only one passes cap500. Test training on the longer evaluated horizon. This does not isolate horizon mismatch as the cause and is not a validated remedy.",
+  "development_disclosure": "Third development protocol on the same seeds, chosen after inspecting v1 and v2. These seeds and evaluation streams are reused; not independent confirmation.",
+  "max_concurrent_nodes": 2,
+  "wall_limit_hours": 8,
+  "measured_v1_node_hours": 8.398055555555555,
+  "measured_v1_150_run_one_thread_baseline_node_hours": 419.90277777777777,
+  "resource_gate": "Measure v3 actual cost; production requires learning gate, realistic multi-thread timing pilot, allocation and partition checks.",
+  "bounded_revision": "Only this three-seed validation is submitted. If unsuccessful, report before further development; no automatic sequence of searches.",
+  "implementation_evidence": "Byte-identical source already passed v2 1/48-thread smoke and all three full-run technical validations. Existing CLI limit config is changed; no new program implementation to smoke.",
+  "timing_comparability": "Training cap alters episode lengths, full-episode returns, batching and update counts; comparison across protocol versions is not a controlled timing result.",
+  "measured_v2_node_hours": 8.471111111111112
+}

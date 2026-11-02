@@ -1,0 +1,292 @@
+{
+  "status": "evidence_validated",
+  "log_warnings": {
+    "horizon-v3-learning-2160932_0.err": [
+      "/usr/bin/id: cannot find name for group ID 40255",
+      "id: cannot find name for group ID 40255"
+    ]
+  },
+  "warning_assessment": "Seed7 stderr contains two id group-name lookup warnings; preserved. No Python traceback, simulator warning or failed exit. Other stderr files empty. This is an observed system warning, not proof of a training fault.",
+  "learning_gate": "not_passed",
+  "production_authorized_by_validation": false,
+  "seeds": [
+    {
+      "seed": 7,
+      "episodes": 289,
+      "transitions": 80000,
+      "updates": 58,
+      "initial_mean_500": 18.7,
+      "training_seconds": 5143.78237937158,
+      "seconds_per_transition": 0.06429727974214475,
+      "elapsed_seconds": 10808,
+      "max_parameter_change": {
+        "rotations": 1.6162440884412872,
+        "embedding": 2.5233021578158734,
+        "readout.weight": 0.30295595422820376,
+        "readout.bias": 0.01014102499416213
+      },
+      "checkpoints_checked": 8,
+      "final_partial_episode": true,
+      "active_workers": 1,
+      "gradient_error": 2.7755575615628914e-16,
+      "heldout_200": {
+        "mean": 199.98,
+        "ci95_conditional_episode_bootstrap": [
+          199.94,
+          200.0
+        ],
+        "passes": true
+      },
+      "heldout_500": {
+        "mean": 492.22,
+        "ci95_conditional_episode_bootstrap": [
+          480.37,
+          500.0
+        ],
+        "passes": true
+      },
+      "rate_schedule_checked_updates": 58,
+      "final_batch_start_steps": 78681,
+      "final_quantum_embedding_lr": 0.010626249285892614,
+      "stability": {
+        "last100_training_mean": 458.51,
+        "post_prior_freeze_steps": 40943,
+        "post_milestone_training_mean": 471.48192771084337,
+        "periodic_500": [
+          {
+            "steps": 0,
+            "mean": 18.7
+          },
+          {
+            "steps": 10264,
+            "mean": 315.5
+          },
+          {
+            "steps": 21017,
+            "mean": 221.0
+          },
+          {
+            "steps": 32149,
+            "mean": 500.0
+          },
+          {
+            "steps": 40367,
+            "mean": 358.9
+          },
+          {
+            "steps": 51181,
+            "mean": 500.0
+          },
+          {
+            "steps": 61181,
+            "mean": 500.0
+          },
+          {
+            "steps": 71181,
+            "mean": 500.0
+          },
+          {
+            "steps": 80000,
+            "mean": 500.0
+          }
+        ]
+      }
+    },
+    {
+      "seed": 17,
+      "episodes": 463,
+      "transitions": 80000,
+      "updates": 93,
+      "initial_mean_500": 19.2,
+      "training_seconds": 5158.190506189028,
+      "seconds_per_transition": 0.06447738132736286,
+      "elapsed_seconds": 7979,
+      "max_parameter_change": {
+        "rotations": 1.4507806473396625,
+        "embedding": 2.2475152714658693,
+        "readout.weight": 0.2999680700662256,
+        "readout.bias": 0.034093532390848724
+      },
+      "checkpoints_checked": 8,
+      "final_partial_episode": true,
+      "active_workers": 1,
+      "gradient_error": 4.440892098500626e-16,
+      "heldout_200": {
+        "mean": 162.7,
+        "ci95_conditional_episode_bootstrap": [
+          159.31,
+          165.72
+        ],
+        "passes": false
+      },
+      "heldout_500": {
+        "mean": 165.14,
+        "ci95_conditional_episode_bootstrap": [
+          162.2,
+          168.21
+        ],
+        "passes": false
+      },
+      "rate_schedule_checked_updates": 93,
+      "final_batch_start_steps": 79592,
+      "final_quantum_embedding_lr": 0.010189667201239518,
+      "stability": {
+        "last100_training_mean": 177.06,
+        "post_prior_freeze_steps": 40673,
+        "post_milestone_training_mean": 203.6871794871795,
+        "periodic_500": [
+          {
+            "steps": 0,
+            "mean": 19.2
+          },
+          {
+            "steps": 10775,
+            "mean": 230.6
+          },
+          {
+            "steps": 20488,
+            "mean": 227.7
+          },
+          {
+            "steps": 30530,
+            "mean": 221.4
+          },
+          {
+            "steps": 40960,
+            "mean": 232.1
+          },
+          {
+            "steps": 50771,
+            "mean": 189.0
+          },
+          {
+            "steps": 61414,
+            "mean": 305.4
+          },
+          {
+            "steps": 70624,
+            "mean": 181.4
+          },
+          {
+            "steps": 80000,
+            "mean": 177.4
+          }
+        ]
+      }
+    },
+    {
+      "seed": 27,
+      "episodes": 295,
+      "transitions": 80000,
+      "updates": 59,
+      "initial_mean_500": 15.1,
+      "training_seconds": 5139.8516026414,
+      "seconds_per_transition": 0.0642481450330175,
+      "elapsed_seconds": 10910,
+      "max_parameter_change": {
+        "rotations": 1.6331118212208926,
+        "embedding": 3.2020130929234383,
+        "readout.weight": 0.3618211189614786,
+        "readout.bias": 0.04465349179977647
+      },
+      "checkpoints_checked": 8,
+      "final_partial_episode": true,
+      "active_workers": 1,
+      "gradient_error": 7.771561172376096e-16,
+      "heldout_200": {
+        "mean": 199.31,
+        "ci95_conditional_episode_bootstrap": [
+          197.93,
+          200.0
+        ],
+        "passes": true
+      },
+      "heldout_500": {
+        "mean": 486.75,
+        "ci95_conditional_episode_bootstrap": [
+          474.58,
+          496.45
+        ],
+        "passes": true
+      },
+      "rate_schedule_checked_updates": 59,
+      "final_batch_start_steps": 77745,
+      "final_quantum_embedding_lr": 0.011094302416078323,
+      "stability": {
+        "last100_training_mean": 477.86,
+        "post_prior_freeze_steps": 57167,
+        "post_milestone_training_mean": 487.74468085106383,
+        "periodic_500": [
+          {
+            "steps": 0,
+            "mean": 15.1
+          },
+          {
+            "steps": 10440,
+            "mean": 257.3
+          },
+          {
+            "steps": 21117,
+            "mean": 421.7
+          },
+          {
+            "steps": 30063,
+            "mean": 490.3
+          },
+          {
+            "steps": 40898,
+            "mean": 486.9
+          },
+          {
+            "steps": 50576,
+            "mean": 500.0
+          },
+          {
+            "steps": 60576,
+            "mean": 500.0
+          },
+          {
+            "steps": 70245,
+            "mean": 494.5
+          },
+          {
+            "steps": 80000,
+            "mean": 494.5
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "qubits": 6,
+    "layers": 3,
+    "parameters": 86,
+    "transitions": 80000,
+    "episode_limit": 500,
+    "batch_episodes": 5,
+    "gamma": 0.99,
+    "optimizer": "Adam AMSGrad",
+    "quantum_embedding_lr": 0.1,
+    "readout_lr": 0.01,
+    "freeze": false,
+    "rate_schedule": {
+      "kind": "exponential_by_batch_start_transitions",
+      "start": 30000,
+      "end": 80000,
+      "final_factor": 0.1
+    },
+    "final_partial_batch": "Update on collected episode segments; final segment return truncated at fixed transition budget",
+    "model": "H, RZ-RY layers, all-pairs CZ between layers, learned RZ embedding after first CZ, 12 Pauli observables, linear softmax"
+  },
+  "software": {
+    "pennylane": "0.45.0.dev82",
+    "pennylane-lightning-kokkos": "0.45.0.dev33",
+    "numpy": "2.4.4",
+    "gymnasium": "1.2.3",
+    "torch": "2.11.0"
+  },
+  "exclusive_node_hours": 8.249166666666667,
+  "one_thread_150_run_extrapolation_node_hours": 412.45833333333337,
+  "limitations": "Third development protocol on the same three seeds and evaluation streams after inspecting v1 and v2; endpoint intervals condition on each policy and do not quantify training-seed variation. Finite training probabilities/gradients are enforced in the hash-verified executed source, with exit0 and finite update records; no per-transition probability archive. Worker placement measured by fixed probes, not continuously. No cross-thread learning-time claim.",
+  "uncertainty": "20,000 bootstrap resamples of 100 held-out episodes per policy, pointwise 95% percentile intervals. All seeds retained."
+}

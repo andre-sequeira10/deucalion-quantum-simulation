@@ -1,0 +1,114 @@
+{
+  "experiments/born-timing/train_policy.py": {
+    "source": "distributed-qrl-case-study/examples/train_policy.py",
+    "sha256": "7aee1885c85f3b9359110212b967e0fa0b02423199d83275771ce9b1fe0b21df"
+  },
+  "experiments/born-timing/run_pair.py": {
+    "source": "distributed-qrl-case-study/examples/run_pair.py",
+    "sha256": "f703efe8879b551cc9a70c741554498fcf184c697ed668c600e73d9c98079396"
+  },
+  "experiments/born-timing/controlled_training.slurm": {
+    "source": "distributed-qrl-case-study/examples/controlled_training.slurm",
+    "sha256": "be7413fadb562f12471a6189cd140ad2f4864c15595a62ed42356ab390289bf1"
+  },
+  "experiments/mpi-variance/variance_product_mpi.py": {
+    "source": "distributed-qrl-case-study/examples/variance_product_mpi.py",
+    "sha256": "4e54723ec71071ef5b72f558162ec08a6dee3a110f4228eca4f51ceee6aeab69"
+  },
+  "experiments/mpi-variance/q30.slurm": {
+    "source": "distributed-qrl-case-study/examples/q30.slurm",
+    "sha256": "cc0d7f6cfff13b6d6b1c4d3ad042ba5177472aaa1155114b7701485d38bcdff0"
+  },
+  "experiments/mpi-variance/q31.slurm": {
+    "source": "distributed-qrl-case-study/examples/q31.slurm",
+    "sha256": "7b60421f9032e9279653fee841ec1313fa9248dffc871a4600976b4417507177"
+  },
+  "experiments/mpi-variance/q32.slurm": {
+    "source": "distributed-qrl-case-study/examples/q32.slurm",
+    "sha256": "78e5e09464cdb07b4f64b8014cad775caad7dc35c4345fa5db01616ccc017f79"
+  },
+  "experiments/mpi-variance/q34.slurm": {
+    "source": "distributed-qrl-case-study/examples/q34.slurm",
+    "sha256": "16bf9412dbf8c3eb5320cf687faee729b5b54b5afc9b0da15436a8b75e204667"
+  },
+  "experiments/hybrid-training/train_annealed.py": {
+    "source": "distributed-qrl-case-study/examples/train_annealed.py",
+    "sha256": "667597f9919810f61f943569eee4b03b8bc7082b2b274a74b35cc33cec5f5db3"
+  },
+  "experiments/hybrid-training/learning_validation.slurm": {
+    "source": "distributed-qrl-case-study/examples/learning_validation.slurm",
+    "sha256": "5473d9f1d017ec5dbaa97846f58ac8193a5757bcd9bc14df0527b6f25f1c60ee"
+  },
+  "experiments/gradient-memory/SHA256SUMS": {
+    "source": "distributed-qrl-case-study/examples/gradient-memory/SHA256SUMS",
+    "sha256": "2cf2ffe37d201ff1253506460a4dd1b34b8edcf1b1446e19787765e6560d8b95"
+  },
+  "experiments/gradient-memory/dependency.json": {
+    "source": "distributed-qrl-case-study/examples/gradient-memory/dependency.json",
+    "sha256": "a35f43ebbe1c0ad67e56e24640b4766d86f8d1221464e5a4cfc1318394720cdd"
+  },
+  "experiments/gradient-memory/measure.py": {
+    "source": "distributed-qrl-case-study/examples/gradient-memory/measure.py",
+    "sha256": "61677c799c4494a98d53f7939a4fda94f4287fd3e071281d3cbf7a626ed7143e"
+  },
+  "experiments/gradient-memory/memory.slurm": {
+    "source": "distributed-qrl-case-study/examples/gradient-memory/memory.slurm",
+    "sha256": "c2cfe2164e78edc9d86f1db8d62e2079658fcd8e14c93c1e2494dfe604071cc8"
+  },
+  "experiments/gradient-memory/protocol.json": {
+    "source": "distributed-qrl-case-study/examples/gradient-memory/protocol.json",
+    "sha256": "8905d849a93d558bb5015a644f356fe6706779a9184f015ae2080e06f6be23d2"
+  },
+  "experiments/gradient-memory/run.py": {
+    "source": "distributed-qrl-case-study/examples/gradient-memory/run.py",
+    "sha256": "da42ea5d2a804c2c53c41486732b24c4be1a2df4ed84debf6546d33acadfebe0"
+  },
+  "experiments/gradient-memory/threadpoolctl-LICENSE": {
+    "source": "distributed-qrl-case-study/examples/gradient-memory/threadpoolctl-LICENSE",
+    "sha256": "81ac619075248b06e53660b652d10e485f4675f5d0ae0f97ea22370da1f7e23b"
+  },
+  "experiments/gradient-memory/threadpoolctl.py": {
+    "source": "distributed-qrl-case-study/examples/gradient-memory/threadpoolctl.py",
+    "sha256": "12fb9526b6a74d2e686b7ec148dc165c3587999b14fa86984aa180e10802400b"
+  },
+  "recorded-results/born-timing/summary.json": {
+    "source": "distributed-qrl-case-study/data/controlled-training/benchmark-summary.json",
+    "sha256": "35d802d48e172512c0aeb69395957c03ffc4e1a7963ce05415047ac13a512da7"
+  },
+  "recorded-results/born-timing/runs.json": {
+    "source": "distributed-qrl-case-study/data/controlled-training/benchmark-runs.json",
+    "sha256": "33bd4bdf4e982db8d70d1dd7e18ef0177905fa1b727ec897a32d4163fbe91abe"
+  },
+  "recorded-results/born-timing/submission.json": {
+    "source": "distributed-qrl-case-study/data/controlled-training/submission.json",
+    "sha256": "56e4f24ada6c6a3be61a95891527a144c173107bda49441c28335e6411e766a1"
+  },
+  "recorded-results/mpi-variance/summary.json": {
+    "source": "distributed-qrl-case-study/data/product-policy-variance/summary.json",
+    "sha256": "87ee0384310ab16bcce4e7e361653d10037d6556dc4b317fcb66cf5b91dec77d"
+  },
+  "recorded-results/hybrid-training/summary.json": {
+    "source": "distributed-qrl-case-study/data/softmax-learning/v3/validated-summary.json",
+    "sha256": "3e86163f173f3e7cc1816c05f8095d54b0675d520ade2188be47398d5766d292"
+  },
+  "experiments/hybrid-training/protocol.json": {
+    "source": "distributed-qrl-case-study/data/softmax-learning/v3/protocol.json",
+    "sha256": "23e8d9e177cd93487bd57c1aa7f309d6972ac43d4c55433564a837eee210d521"
+  },
+  "recorded-results/hybrid-training/submission.json": {
+    "source": "distributed-qrl-case-study/data/softmax-learning/v3/submission.json",
+    "sha256": "471dfb122f0b155a7435efc2c01e5839bcd9e36d2e9153fbad31ef3e8dda9506"
+  },
+  "recorded-results/gradient-memory/memory-summary.csv": {
+    "source": "distributed-qrl-case-study/data/gradient-memory/memory-summary.csv",
+    "sha256": "384c8c3a8a77463a3055c094e8b24c19c7ba25bb7e5333b863e5361f47acd2e2"
+  },
+  "recorded-results/gradient-memory/summary.json": {
+    "source": "distributed-qrl-case-study/data/gradient-memory/validated-summary.json",
+    "sha256": "675fd43a34d9b35ca3f8ee4227e9887ee378f796301ab64830524ad419b2220b"
+  },
+  "recorded-results/gradient-memory/analysis-notes.txt": {
+    "source": "distributed-qrl-case-study/data/gradient-memory/analysis-notes.txt",
+    "sha256": "b3dc7d408b7ec8e0c9ae8e7df665ad24ac998243d1016f6d6b4730023f8da92b"
+  }
+}

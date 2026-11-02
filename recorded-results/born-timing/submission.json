@@ -1,0 +1,19 @@
+{
+  "status": "submitted",
+  "created_utc": "2026-10-27T18:51:11.113225Z",
+  "array": "0-29%2",
+  "threads": [
+    1,
+    8,
+    16,
+    32,
+    48
+  ],
+  "paired_seeds": 30,
+  "steps_per_run": 4096,
+  "wall_hours": 2,
+  "projected_seconds_per_paired_seed": 1895.43318952946,
+  "projected_total_allocated_node_hours": 15.795276579412166,
+  "pilot_job": "2152942",
+  "job_id": "2152965"
+}

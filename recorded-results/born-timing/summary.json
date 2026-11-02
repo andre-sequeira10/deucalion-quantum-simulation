@@ -1,0 +1,452 @@
+[
+  {
+    "threads": 1,
+    "runs": 30,
+    "training_seconds": {
+      "median": 323.7487585459603,
+      "q1": 323.4272474425961,
+      "q3": 324.1183820829028,
+      "minimum": 322.99486687313765,
+      "maximum": 325.77885159803554
+    },
+    "seconds_per_step": {
+      "median": 0.07904022425438484,
+      "q1": 0.07896173033266507,
+      "q3": 0.0791304643757087,
+      "minimum": 0.07885616867019962,
+      "maximum": 0.07953585244092665
+    },
+    "fixed_probe_seconds": {
+      "median": 5.105197060969658,
+      "q1": 5.094864695915021,
+      "q3": 5.115203212248161,
+      "minimum": 5.080892561934888,
+      "maximum": 5.12872953619808
+    },
+    "paired_speedup_vs_48": {
+      "median": 1.1649624878018003,
+      "q1": 1.1528082291930046,
+      "q3": 1.173737268707044,
+      "minimum": 1.1267589929672681,
+      "maximum": 1.186298381578029
+    },
+    "paired_time_reduction_pct": {
+      "median": 14.160165948675118,
+      "q1": 13.255246499334406,
+      "q3": 14.802020154160498,
+      "minimum": 11.249876305265072,
+      "maximum": 15.704175650160845,
+      "bootstrap95": [
+        13.429319193036378,
+        14.62683213467454
+      ],
+      "bootstrap98_75": [
+        13.376949186101273,
+        14.70391569235211
+      ],
+      "interval_note": "10000 paired-seed percentile bootstrap replicates of median reduction; 98.75% allocates alpha=.05/4 for four comparisons vs 48 threads; approximate intervals, not proof of a kernel mechanism"
+    },
+    "rollout_seconds": {
+      "median": 146.70809557766188,
+      "q1": 146.09409489115933,
+      "q3": 147.17036239581648,
+      "minimum": 145.67431250447407,
+      "maximum": 150.28334998851642
+    },
+    "gradient_seconds": {
+      "median": 177.26965222181752,
+      "q1": 176.64172165142372,
+      "q3": 177.5184380710125,
+      "minimum": 173.89920306880958,
+      "maximum": 178.1950940815732
+    },
+    "initial_mean_return": {
+      "median": 22.3,
+      "q1": 19.45,
+      "q3": 25.875,
+      "minimum": 15.5,
+      "maximum": 32.5
+    },
+    "final_mean_return": {
+      "median": 22.3,
+      "q1": 20.225,
+      "q3": 25.875,
+      "minimum": 15.5,
+      "maximum": 32.5
+    },
+    "return_change": {
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "minimum": -2.1999999999999993,
+      "maximum": 3.1999999999999993
+    },
+    "process_wall_seconds": {
+      "median": 358.41423547489103,
+      "q1": 354.93322520609945,
+      "q3": 362.4187986125471,
+      "minimum": 351.403357074596,
+      "maximum": 394.7158155287616
+    }
+  },
+  {
+    "threads": 8,
+    "runs": 30,
+    "training_seconds": {
+      "median": 337.90390526899137,
+      "q1": 336.1325842567021,
+      "q3": 338.78322776255663,
+      "minimum": 334.49104133062065,
+      "maximum": 346.77716110507026
+    },
+    "seconds_per_step": {
+      "median": 0.08249607062231235,
+      "q1": 0.08206361920329641,
+      "q3": 0.08271074896546793,
+      "minimum": 0.08166285188735856,
+      "maximum": 0.08466239284791754
+    },
+    "fixed_probe_seconds": {
+      "median": 5.323166544083506,
+      "q1": 5.290884368994739,
+      "q3": 5.339930794900283,
+      "minimum": 5.2628348232246935,
+      "maximum": 5.445668656844646
+    },
+    "paired_speedup_vs_48": {
+      "median": 1.1185369323332703,
+      "q1": 1.1011404907574036,
+      "q3": 1.1254179421730899,
+      "minimum": 1.0838621746060402,
+      "maximum": 1.1434365237123298
+    },
+    "paired_time_reduction_pct": {
+      "median": 10.597498288619567,
+      "q1": 9.18486646915252,
+      "q3": 11.144117019643623,
+      "minimum": 7.7373467375150495,
+      "maximum": 12.544336370036756,
+      "bootstrap95": [
+        9.723809745300743,
+        11.057628849003827
+      ],
+      "bootstrap98_75": [
+        9.418347350980415,
+        11.109789404589431
+      ],
+      "interval_note": "10000 paired-seed percentile bootstrap replicates of median reduction; 98.75% allocates alpha=.05/4 for four comparisons vs 48 threads; approximate intervals, not proof of a kernel mechanism"
+    },
+    "rollout_seconds": {
+      "median": 153.81765985279344,
+      "q1": 152.6223355588736,
+      "q3": 154.24281869409606,
+      "minimum": 152.17537635471672,
+      "maximum": 158.50034201191738
+    },
+    "gradient_seconds": {
+      "median": 184.03100329753943,
+      "q1": 182.95834397815634,
+      "q3": 184.77127089735586,
+      "minimum": 180.96803367882967,
+      "maximum": 188.25598189397715
+    },
+    "initial_mean_return": {
+      "median": 22.3,
+      "q1": 19.45,
+      "q3": 25.875,
+      "minimum": 15.5,
+      "maximum": 32.5
+    },
+    "final_mean_return": {
+      "median": 22.3,
+      "q1": 20.225,
+      "q3": 25.875,
+      "minimum": 15.5,
+      "maximum": 32.5
+    },
+    "return_change": {
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "minimum": -2.1999999999999993,
+      "maximum": 3.1999999999999993
+    },
+    "process_wall_seconds": {
+      "median": 373.49251909554005,
+      "q1": 370.74988016835414,
+      "q3": 378.64346857502824,
+      "minimum": 363.3462128988467,
+      "maximum": 401.9730158171151
+    }
+  },
+  {
+    "threads": 16,
+    "runs": 30,
+    "training_seconds": {
+      "median": 347.11114446853753,
+      "q1": 345.4280434848042,
+      "q3": 348.3653554650955,
+      "minimum": 342.5132597449701,
+      "maximum": 350.86863868590444
+    },
+    "seconds_per_step": {
+      "median": 0.08474393175501405,
+      "q1": 0.08433301842890728,
+      "q3": 0.08505013561159558,
+      "minimum": 0.08362140130492435,
+      "maximum": 0.08566128874167589
+    },
+    "fixed_probe_seconds": {
+      "median": 5.46574587887153,
+      "q1": 5.439627767424099,
+      "q3": 5.492924069287255,
+      "minimum": 5.398515423061326,
+      "maximum": 5.524795988108963
+    },
+    "paired_speedup_vs_48": {
+      "median": 1.0858547141973114,
+      "q1": 1.0768632194540206,
+      "q3": 1.093433193443747,
+      "minimum": 1.0475686882996722,
+      "maximum": 1.1142802744423426
+    },
+    "paired_time_reduction_pct": {
+      "median": 7.906405289660562,
+      "q1": 7.137686884042138,
+      "q3": 8.544938384665983,
+      "minimum": 4.540865800111094,
+      "maximum": 10.255972134078728,
+      "bootstrap95": [
+        7.243891997023755,
+        8.414110877633075
+      ],
+      "bootstrap98_75": [
+        7.187169428444395,
+        8.480472481720835
+      ],
+      "interval_note": "10000 paired-seed percentile bootstrap replicates of median reduction; 98.75% allocates alpha=.05/4 for four comparisons vs 48 threads; approximate intervals, not proof of a kernel mechanism"
+    },
+    "rollout_seconds": {
+      "median": 158.3740091084037,
+      "q1": 157.3537670103833,
+      "q3": 159.08092658803798,
+      "minimum": 156.06064607249573,
+      "maximum": 160.93602005345747
+    },
+    "gradient_seconds": {
+      "median": 188.75312737294007,
+      "q1": 187.88658531743567,
+      "q3": 189.6995991425356,
+      "minimum": 185.57575927115977,
+      "maximum": 191.13292206265032
+    },
+    "initial_mean_return": {
+      "median": 22.3,
+      "q1": 19.45,
+      "q3": 25.875,
+      "minimum": 15.5,
+      "maximum": 32.5
+    },
+    "final_mean_return": {
+      "median": 22.3,
+      "q1": 20.225,
+      "q3": 25.875,
+      "minimum": 15.5,
+      "maximum": 32.5
+    },
+    "return_change": {
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "minimum": -2.1999999999999993,
+      "maximum": 3.1999999999999993
+    },
+    "process_wall_seconds": {
+      "median": 383.81762449326925,
+      "q1": 379.5233995161252,
+      "q3": 388.3173814601032,
+      "minimum": 376.08621913939714,
+      "maximum": 415.44196534808725
+    }
+  },
+  {
+    "threads": 32,
+    "runs": 30,
+    "training_seconds": {
+      "median": 363.5324023825815,
+      "q1": 361.03908266621875,
+      "q3": 364.68471810244955,
+      "minimum": 354.18085055286065,
+      "maximum": 366.79290331318043
+    },
+    "seconds_per_step": {
+      "median": 0.08875302792543494,
+      "q1": 0.08814430729155731,
+      "q3": 0.08903435500548085,
+      "minimum": 0.086469934217007,
+      "maximum": 0.08954904866044444
+    },
+    "fixed_probe_seconds": {
+      "median": 5.7257313234731555,
+      "q1": 5.680544858623762,
+      "q3": 5.745069938129745,
+      "minimum": 5.584235850255936,
+      "maximum": 5.801968263927847
+    },
+    "paired_speedup_vs_48": {
+      "median": 1.0385480715284299,
+      "q1": 1.0299503109650245,
+      "q3": 1.048293255810796,
+      "minimum": 1.0068134998212208,
+      "maximum": 1.0596743272922209
+    },
+    "paired_time_reduction_pct": {
+      "median": 3.711708082718357,
+      "q1": 2.9076084347188975,
+      "q3": 4.606845730615866,
+      "minimum": 0.6767390209239887,
+      "maximum": 5.631383695470504,
+      "bootstrap95": [
+        3.3357844054058114,
+        4.392715093308031
+      ],
+      "bootstrap98_75": [
+        3.216858414969914,
+        4.567192038619349
+      ],
+      "interval_note": "10000 paired-seed percentile bootstrap replicates of median reduction; 98.75% allocates alpha=.05/4 for four comparisons vs 48 threads; approximate intervals, not proof of a kernel mechanism"
+    },
+    "rollout_seconds": {
+      "median": 166.57383123063482,
+      "q1": 165.34385590947932,
+      "q3": 167.24705632415134,
+      "minimum": 161.37095986213535,
+      "maximum": 170.00734253739938
+    },
+    "gradient_seconds": {
+      "median": 196.79043603001628,
+      "q1": 195.16715673269937,
+      "q3": 197.6563926464878,
+      "minimum": 192.3791397777386,
+      "maximum": 199.62093177973293
+    },
+    "initial_mean_return": {
+      "median": 22.3,
+      "q1": 19.45,
+      "q3": 25.875,
+      "minimum": 15.5,
+      "maximum": 32.5
+    },
+    "final_mean_return": {
+      "median": 22.3,
+      "q1": 20.225,
+      "q3": 25.875,
+      "minimum": 15.5,
+      "maximum": 32.5
+    },
+    "return_change": {
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "minimum": -2.1999999999999993,
+      "maximum": 3.1999999999999993
+    },
+    "process_wall_seconds": {
+      "median": 400.47431832097936,
+      "q1": 396.14528251590673,
+      "q3": 405.90791882033227,
+      "minimum": 389.06070316396654,
+      "maximum": 431.46831076871604
+    }
+  },
+  {
+    "threads": 48,
+    "runs": 30,
+    "training_seconds": {
+      "median": 377.72086151200347,
+      "q1": 373.25551883823937,
+      "q3": 379.9960248999996,
+      "minimum": 364.9489764198661,
+      "maximum": 383.4403326380998
+    },
+    "seconds_per_step": {
+      "median": 0.09221700720507897,
+      "q1": 0.09112683565386703,
+      "q3": 0.09277246701660147,
+      "minimum": 0.08909887119625637,
+      "maximum": 0.09361336246047358
+    },
+    "fixed_probe_seconds": {
+      "median": 5.926628819084726,
+      "q1": 5.845046070870012,
+      "q3": 5.96085927792592,
+      "minimum": 5.694883632939309,
+      "maximum": 5.998404360376298
+    },
+    "paired_speedup_vs_48": {
+      "median": 1.0,
+      "q1": 1.0,
+      "q3": 1.0,
+      "minimum": 1.0,
+      "maximum": 1.0
+    },
+    "paired_time_reduction_pct": {
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "minimum": 0.0,
+      "maximum": 0.0,
+      "bootstrap95": [
+        0.0,
+        0.0
+      ],
+      "bootstrap98_75": [
+        0.0,
+        0.0
+      ],
+      "interval_note": "10000 paired-seed percentile bootstrap replicates of median reduction; 98.75% allocates alpha=.05/4 for four comparisons vs 48 threads; approximate intervals, not proof of a kernel mechanism"
+    },
+    "rollout_seconds": {
+      "median": 173.47436036681756,
+      "q1": 171.3131923736073,
+      "q3": 174.99397301813588,
+      "minimum": 166.63566197361797,
+      "maximum": 176.8884297995828
+    },
+    "gradient_seconds": {
+      "median": 202.8247351704631,
+      "q1": 201.4729960220866,
+      "q3": 205.64910724479705,
+      "minimum": 196.07542729307897,
+      "maximum": 207.55907509755343
+    },
+    "initial_mean_return": {
+      "median": 22.3,
+      "q1": 19.45,
+      "q3": 25.875,
+      "minimum": 15.5,
+      "maximum": 32.5
+    },
+    "final_mean_return": {
+      "median": 22.3,
+      "q1": 20.225,
+      "q3": 25.875,
+      "minimum": 15.5,
+      "maximum": 32.5
+    },
+    "return_change": {
+      "median": 0.0,
+      "q1": 0.0,
+      "q3": 0.0,
+      "minimum": -2.1999999999999993,
+      "maximum": 3.1999999999999993
+    },
+    "process_wall_seconds": {
+      "median": 416.6247846845072,
+      "q1": 412.1401456135791,
+      "q3": 421.21618165652035,
+      "minimum": 397.5598417161964,
+      "maximum": 450.1787909329869
+    }
+  }
+]

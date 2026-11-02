@@ -1,0 +1,30 @@
+{
+  "declared_utc": "2026-10-29T06:16:20.930705+00:00",
+  "source_sha256": "667597f9919810f61f943569eee4b03b8bc7082b2b274a74b35cc33cec5f5db3",
+  "protocol_sha256": "23e8d9e177cd93487bd57c1aa7f309d6972ac43d4c55433564a837eee210d521",
+  "slurm_sha256": "5473d9f1d017ec5dbaa97846f58ac8193a5757bcd9bc14df0527b6f25f1c60ee",
+  "seeds": [
+    7,
+    17,
+    27
+  ],
+  "array": "0-2%2",
+  "threads": 1,
+  "transitions": 80000,
+  "cap": 500,
+  "batch_episodes": 5,
+  "heldout_episodes_per_cap": 100,
+  "freeze": false,
+  "decay_start": 30000,
+  "decay_end": 80000,
+  "final_rate_factor": 0.1,
+  "wall_limit_hours": 8,
+  "max_concurrent_nodes": 2,
+  "max_reserved_node_hours": 24,
+  "planning_node_hours": "v2 used 8.471 exclusive-node-hours for three runs; v3 cost is unmeasured",
+  "program_identity_to_v2": true,
+  "job_id": "2160932",
+  "submitted_utc": "2026-10-29T06:17:51.326923+00:00",
+  "kind": "horizon-v3-learning-validation",
+  "remote": "/projects/EEHPC-DEV-2026D02-152/controlled_softmax_horizon_v3_20261029"
+}

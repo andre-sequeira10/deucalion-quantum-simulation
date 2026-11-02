@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+experiments/**/logs/
+experiments/**/results/
+experiments/**/pilot/
+experiments/**/learning-validation/
+experiments/**/smoke-results/
+experiments/**/production-results/

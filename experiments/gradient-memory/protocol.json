@@ -1,0 +1,86 @@
+{
+  "schema": 2,
+  "declared_utc": "2026-11-02",
+  "purpose": "Empirical memory scaling of three gradient methods on Deucalion; no training",
+  "backend": "PennyLane default.qubit for all methods; torch interface; native internal kernels can differ by method",
+  "precision": "complex128 state, float64 angles and output",
+  "methods": [
+    "backprop",
+    "adjoint",
+    "parameter-shift"
+  ],
+  "control": "forward-only torch circuit",
+  "qubits": [
+    6,
+    8,
+    10,
+    12,
+    14,
+    16,
+    18,
+    20
+  ],
+  "groups": 20,
+  "gates": 100,
+  "parameters": 60,
+  "repetitions": 3,
+  "circuit": "For i=0..groups-1: a=i%n,b=(i+1)%n; RY(theta[3i],a), RX(theta[3i+1],b), CNOT(a,b), RY(theta[3i+2],b), CNOT(b,a). Initial |0>, scalar expectation of Pauli Z on wire 0 (constant 2x2 observable matrix).",
+  "seed": 20261102,
+  "angles": "NumPy default_rng seed uniform[-1,1], one vector per group count; identical across methods/qubits/repeats",
+  "depth_check": {
+    "qubits": 16,
+    "gates": [
+      50,
+      100,
+      200
+    ],
+    "parameters": [
+      30,
+      60,
+      120
+    ],
+    "repetitions": 3
+  },
+  "smoke": {
+    "qubits": [
+      6,
+      16
+    ],
+    "gates": 100,
+    "methods_plus_control": 4,
+    "repetitions": 1
+  },
+  "execution": "Fresh interpreter for each case, sequential methods and shifts, no broadcasting or multiprocessing; one active compute core, one exclusive 48-core A64FX node",
+  "memory": "Linux VmRSS baseline after tiny 2-qubit method warmup, circuit construction, gc and malloc_trim; reset own VmHWM via clear_refs=5; measure full value+gradient; report absolute VmHWM and increment above baseline. External 10ms RSS samples and lifetime ru_maxrss retained.",
+  "limitations": [
+    "RSS includes quantum buffers, framework temporaries and allocator effects; subtraction is not exact live tensor accounting",
+    "Fixed-gate qubit sweep tests exponential-in-n scaling, not gate-depth scaling alone",
+    "Depth subtest checks direction and size of gate-dependent retention at fixed n",
+    "Previously stated 103/3/1 vector counts are illustrative, not universal backend predictions",
+    "No multi-node or hardware execution; memory results cannot establish distributed backend support"
+  ],
+  "hypotheses": [
+    "One dense statevector is S=16*2^n bytes",
+    "Uncheckpointed reverse-mode backprop retains gate-dependent intermediates, O(G*S)",
+    "Reversible adjoint uses O(S) state memory for serial scalar observable, implementation-dependent constant",
+    "Sequential parameter-shift uses O(S) state memory, with computation proportional to number of shifted evaluations"
+  ],
+  "validation": {
+    "gradient_max_absolute_difference": 1e-09,
+    "output_max_absolute_difference": 1e-10,
+    "finite_nonzero_gradient": true,
+    "hwm_reset_required": true,
+    "single_thread_pools_required": true
+  },
+  "resource_bounds": {
+    "smoke_minutes": 15,
+    "production_minutes": 120,
+    "nodes": 1,
+    "per_process_minutes": 15,
+    "per_process_rss_guard_GiB": 24,
+    "no_automatic_retry": true
+  },
+  "production_gate": "Only submit after all 8 smoke runs pass, observed memory and runtime support the 2-hour bound; otherwise investigate without expanding resource bounds automatically",
+  "analysis": "Median and range of 3 repetitions; all raw runs retained. Compare peak and incremental RSS vs S. Fit intercept+slope*S to n14..20 separately for each method, report residuals and ratios; do not infer asymptotic proof from small cases.",
+  "revision": "Second smoke found default.qubit adjoint densifies global parity to a 2^n by 2^n matrix (64GiB allocation at n16). All methods now use local Z0; prior attempts preserved. No production measurements yet."
+}

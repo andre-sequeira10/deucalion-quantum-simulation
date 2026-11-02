@@ -1,8 +1,12 @@
-# Quantum simulation experiments on Deucalion
+# Quantum simulation experiments on Deucalion ARM
 
 Standalone PennyLane experiments supporting the EPICURE case study on dense
 statevector simulation and gradient-based training of parameterized quantum
 reinforcement learning agents on Deucalion ARM.
+
+**All reported experiments ran on Deucalion's ARM partition (`normal-arm`),
+using Fujitsu A64FX CPU nodes.** They did not run on Deucalion's x86 or GPU
+partitions, or on quantum hardware.
 
 **These programs do not import or use QASP.** Circuits are constructed directly
 with PennyLane gates, observables and QNodes. The surrounding programs use
@@ -174,3 +178,10 @@ This offline check verifies the copied-file hashes and parses the Python and
 JSON files. It does not import the simulator, execute a circuit, submit a job,
 or repeat the scientific validation. Full reruns require the documented runtime
 and compute allocation.
+
+## License
+
+The original experiment code and documentation are available under the
+[MIT license](LICENSE). The bundled `threadpoolctl` module retains its separate
+BSD 3-Clause license and copyright notices in
+[threadpoolctl-LICENSE](experiments/gradient-memory/threadpoolctl-LICENSE).
